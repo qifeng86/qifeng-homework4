@@ -1,7 +1,6 @@
-# Requirement
-This is an application that an employee can use to generate a random password based on criteria they’ve selected. This application will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished user interface that is responsive and adaptive to multiple screen sizes.
+# Description
+This is a web application that allows users to answer questions and score based on how much time left on the clock after they finish the final question. Users can view their rankings by going into view highscores. 
 
 # Features
-Employee selects character lenght between 8 to 128 for the password. If user input is empty or less than 8 or more than 128 charecters, user will be alerted.
-Employee will be prompted to choose different combinations of random generated password.
-Once employee finishes the selection, system will generate a random password based on what requirements employee has selected.
+1. This web application comes with resposnsive design and styling by utilizing bootstrap.
+2. It also utilizes browser APIs.
