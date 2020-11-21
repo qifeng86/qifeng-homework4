@@ -107,7 +107,7 @@ function initQuiz() {
             colEl.append(headerEl);
             colEl = quizContainerEl.children[0].children[1];
 
-            //Display questions one by one through questions array after user clicks on the answer. If answer is wrong, deduct 10 seconds from current timer, otherwise move onto next question. 
+            //Display questions one by one through questions array after user clicks on the answer. 
             for (let i = 0; i < 4; i++) {
                 let rowEl = document.createElement("div");
                 rowEl.setAttribute("class", "row mb-1");
@@ -141,6 +141,7 @@ function initQuiz() {
                     let parEl = document.createElement("p");
                     colEl.append(parEl);
 
+                    //if user chooses right question, display correct. otherwise display wrong and deduct 10 seconds from current timer.
                     if (this.innerHTML === questions[currentQuestion - 1].answer) {
                         parEl.innerHTML = "Correct!";
                     } else {
@@ -153,6 +154,7 @@ function initQuiz() {
                     }
                     currentQuestion++;
 
+                    //finish when current question increment is more than questions in the array, finish the game with score equals to the current timer.
                     if (currentQuestion > questions.length) {
                         score = timeleft;
                     }

@@ -4,3 +4,4 @@ This is a web application that allows users to answer questions and score based 
 # Features
 1. This web application comes with resposnsive design and styling by utilizing bootstrap.
 2. It also utilizes browser APIs.
+3. Utilize local storage in browswer for high score ranking.
